@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+           <h2>Student Enrollment Form</h2>
+           
+           <form id="studentForm" method = "post">
+               <div class="form-group">
+                   <label for="s_roll">Student RollNo:</label>
+                   <input type="number" class="form-control" 
+                          name="s_roll" id="s_roll" onchange="getRoll()" required />
+               </div>
+               <div class="form-group">
+                   <label for="s_name">Student Name:</label>
+        
+                   <input type="text" class="form-control" 
+                          name="s_name" id="s_name" required />
+               </div>
+               <div class="form-group">
+                   <label for="s_class">Student Class</label>
+                   <input type="number" class="form-control" 
+                          name="s_class" id="s_class" required />
+               </div>
+               <div class="form-group">
+                   <label for="s_dob">Student DOB</label>
+                   <input type="date" class="form-control" 
+                          name="s_dob" id="s_dob" required />
+               </div>
+               <div class="form-group">
+                   <label for="s_address">Student Address</label>
+                   <input type="text" class="form-control" 
+                          name="s_address" id="s_address" required />
+               </div>
+                <div class="form-group">
+                   <label for="s_erolldate">Student Enrollment Date</label>
+                   <input type="date" class="form-control" 
+                          name="s_erolldate" id="s_erolldate" required />
+               </div>
+               <input type="button" class ="btn btn-primary" id="save" 
+                     onclick ="saveData()" value="Save">
+               <input type="button" class ="btn btn-primary" id="update" 
+                     onclick ="updateData()" value="Update">
+               <input type="button" class ="btn btn-primary" id="reset" 
+                     onclick ="resetForm()" value="Reset">
+               
+           </form>
+           </div>
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
